@@ -224,16 +224,16 @@ wykorzystywano metodę **list\_name.pop(0**). Ostatni element otrzymywany
 był dzięki poleceniu **list\_name.pop(-1)**.
 
 ```python
-class Ship:\
-def \_\_init\_\_(self, name, capacity, shipowner, seaCans):\
-	self.position = \[0, 0\]\
-	self.seaCans = seaCans\
-	self.src\_port\_queue = \[\]\
-	self.dest\_port\_queue = \[\]\
-	self.shipowner = shipowner\
-	self.capacity = capacity\
-	self.fuel = 20\
-	self.state = 100\
+class Ship:
+def __init__(self, name, capacity, shipowner, seaCans):
+	self.position = [0, 0]
+	self.seaCans = seaCans
+	self.src_port_queue = []
+	self.dest_port_queue = []
+	self.shipowner = shipowner
+	self.capacity = capacity
+	self.fuel = 20
+	self.state = 100
 	self.name = name
 ```
 
@@ -242,10 +242,10 @@ Przykładowe wykorzystanie kolejki **dest\_port\_queue** i funkcji
 **pop()** w metodzie klasy **Ship** :
 
 ```python
-def **unload**\_**seaCan**(self):\
-	self.is\_unloading\_seaCan = True\
-	current\_port = self.dest\_port\_queue\[0\]\
-	current\_port.loading\_warehouse.load\_seaCan(self.seaCans.pop(0))
+def unload_seaCan(self):
+	self.is_unloading_seaCan = True
+	current_port = self.dest_port_queue[0]
+	current_port.loading_warehouse.load_seaCan(self.seaCans.pop(0))
 ```
   
 
