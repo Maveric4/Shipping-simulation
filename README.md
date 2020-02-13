@@ -225,23 +225,23 @@ był dzięki poleceniu **list\_name.pop(-1)**.
 
 class Ship:\
 def \_\_init\_\_(self, name, capacity, shipowner, seaCans):\
-self.position = \[0, 0\]\
-self.seaCans = seaCans\
-self.src\_port\_queue = \[\]\
-self.dest\_port\_queue = \[\]\
-self.shipowner = shipowner\
-self.capacity = capacity\
-self.fuel = 20\
-self.state = 100\
-self.name = name
+	self.position = \[0, 0\]\
+	self.seaCans = seaCans\
+	self.src\_port\_queue = \[\]\
+	self.dest\_port\_queue = \[\]\
+	self.shipowner = shipowner\
+	self.capacity = capacity\
+	self.fuel = 20\
+	self.state = 100\
+	self.name = name
 
 Przykładowe wykorzystanie kolejki **dest\_port\_queue** i funkcji
 **pop()** w metodzie klasy **Ship** :
 
 def **unload**\_**seaCan**(self):\
-self.is\_unloading\_seaCan = True\
-current\_port = self.dest\_port\_queue\[0\]\
-current\_port.loading\_warehouse.load\_seaCan(self.seaCans.pop(0))
+	self.is\_unloading\_seaCan = True\
+	current\_port = self.dest\_port\_queue\[0\]\
+	current\_port.loading\_warehouse.load\_seaCan(self.seaCans.pop(0))
 
   
 
