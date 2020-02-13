@@ -11,8 +11,6 @@ szybkością symulacji.
 Interfejs graficzny
 ===================
 
-![](media/image1.png){width="5.8069444444444445in"
-height="5.110416666666667in"}\
 Korzystając z możliwości graficznych biblioteki *OpenCV* wyświetlane są
 dwa okna. Jedno do prezentacji pozycji obiektów symulacji, a drugie
 dające możliwość sterowania ilością statków, portów, stoczni i armatorów
