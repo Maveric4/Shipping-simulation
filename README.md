@@ -223,6 +223,7 @@ projekcie list dostępnych w języku *Python*. Aby dostać pierwszy element
 wykorzystywano metodę **list\_name.pop(0**). Ostatni element otrzymywany
 był dzięki poleceniu **list\_name.pop(-1)**.
 
+```python
 class Ship:\
 def \_\_init\_\_(self, name, capacity, shipowner, seaCans):\
 	self.position = \[0, 0\]\
@@ -234,15 +235,18 @@ def \_\_init\_\_(self, name, capacity, shipowner, seaCans):\
 	self.fuel = 20\
 	self.state = 100\
 	self.name = name
+```
+
 
 Przykładowe wykorzystanie kolejki **dest\_port\_queue** i funkcji
 **pop()** w metodzie klasy **Ship** :
 
+```python
 def **unload**\_**seaCan**(self):\
 	self.is\_unloading\_seaCan = True\
 	current\_port = self.dest\_port\_queue\[0\]\
 	current\_port.loading\_warehouse.load\_seaCan(self.seaCans.pop(0))
-
+```
   
 
 Zapis i odczyt stanu
